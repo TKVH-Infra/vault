@@ -1,0 +1,2 @@
+helm install vault hashicorp/vault -f values.yml
+helm upgrade vault hashicorp/vault -f values.yml

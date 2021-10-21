@@ -1,0 +1,34 @@
+injector:
+  enabled: false
+
+server:
+  dataStorage:
+    enabled: true
+    size: 5Gi
+    mountPath: "/vault/data"
+    storageClass: managed-nfs-storage
+    accessMode: ReadWriteOnce
+    annotations:
+      nfs.io/storage-path: "vault"
+  standalone:
+    enabled: "-"
+  ha:
+    enabled: false
+    replicas: 3
+    raft:
+      enabled: false
+  readinessProbe:
+    enabled: false
+  livenessProbe:
+    enabled: false
+
+csi:
+  enabled: true
+
+ui:
+  enabled: true
+  publishNotReadyAddresses: true
+  activeVaultPodOnly: false
+  serviceType: "ClusterIP"
+  externalPort: 8200
+  targetPort: 8200
