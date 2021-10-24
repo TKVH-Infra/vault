@@ -417,7 +417,7 @@ spec:
         name: data
       
         annotations:
-          nfs.io/storage-path: vault
+          nfs.io/storage-path: data01/vault
       spec:
         accessModes:
           - ReadWriteOnce
