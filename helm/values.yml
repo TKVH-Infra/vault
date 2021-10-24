@@ -9,7 +9,7 @@ server:
     storageClass: managed-nfs-storage
     accessMode: ReadWriteOnce
     annotations:
-      nfs.io/storage-path: "vault"
+      nfs.io/storage-path: "data01/vault"
   standalone:
     enabled: "-"
   ha:
