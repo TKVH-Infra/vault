@@ -4,6 +4,13 @@ namespace: vault
 resources:
   - vault-install.yml
   - vault-rbac-sa.yml
+  # ingress nginx
   - vault-ing.yml
+  # ingress istio
+  #- vault-gateway.yml
+  #- vault-vsvc.yml
+  - vault-ns.yml
+  - vault-k8s-auth-sa.yml
 patches:
   - vault-statefulset-patch.yml
+  - vault-server-test-pod-patch.yml
