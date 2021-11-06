@@ -13,4 +13,3 @@ resources:
   - vault-k8s-auth-sa.yml
 patches:
   - vault-statefulset-patch.yml
-  - vault-server-test-pod-patch.yml
