@@ -16,4 +16,4 @@ spec:
                 operator: In
                 values:
                 - ssd
-      serviceAccountName: vault-k8s-auth
+      serviceAccountName: vault

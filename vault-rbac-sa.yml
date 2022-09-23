@@ -10,6 +10,6 @@
     name: system:auth-delegator
   subjects:
   - kind: ServiceAccount
-    name: vault-k8s-auth
+    name: vault
     namespace: vault
 ---
